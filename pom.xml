@@ -4,6 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <groupId>top.jayu</groupId>
     <artifactId>dubbo</artifactId>
     <packaging>pom</packaging>
@@ -11,7 +18,41 @@
 
     <modules>
         <module>api</module>
+        <module>userServer</module>
+        <module>platform</module>
     </modules>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <dubbo.version>2.6.5</dubbo.version>
+        <spring.version>4.3.16.RELEASE</spring.version>
+        <curator-client.version>2.12.0</curator-client.version>
+        <curator.version>2.12.0</curator.version>
+        <junit_version>4.12</junit_version>
+        <lombok.version>1.18.10</lombok.version>
+        <dubbo.spring.boot.version>0.2.0</dubbo.spring.boot.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.spring.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.jayu</groupId>
+                <artifactId>api</artifactId>
+                <version>${version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

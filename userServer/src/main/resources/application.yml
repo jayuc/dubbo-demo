@@ -1,0 +1,12 @@
+server:
+  port: 8056
+dubbo:
+  application:
+    name: userServer
+  registry:
+    address: 121.89.170.193:2222
+    protocol: zookeeper
+    check: false
+  protocol:
+    name: dubbo
+    port: 2223
