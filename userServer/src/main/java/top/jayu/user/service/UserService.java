@@ -12,7 +12,7 @@ public class UserService implements IUserService {
     public User getUserById(String id) {
         log.info("<== return user");
         User user = new User();
-        user.setId("2");
+        user.setId(1);
         user.setName("中华");
         return user;
     }
