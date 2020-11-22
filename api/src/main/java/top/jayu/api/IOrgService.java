@@ -4,6 +4,6 @@ import top.jayu.api.model.Org;
 
 public interface IOrgService {
 
-    Org getOrgById(String id);
+    Org getOrgById(Integer id);
 
 }

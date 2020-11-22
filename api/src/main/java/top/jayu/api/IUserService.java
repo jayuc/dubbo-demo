@@ -7,6 +7,6 @@ import top.jayu.api.model.User;
  */
 public interface IUserService {
 
-    User getUserById(String id);
+    User getUserById(Integer id);
 
 }

@@ -24,3 +24,14 @@ CREATE TABLE `t_sys_user` (
   `age` int(11) DEFAULT NULL COMMENT '年龄',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+# 模拟数据
+INSERT t_sys_org (id,parent_id,name,code,address) VALUE (1,0,'交通支队','0110','临安区人民路83号');
+INSERT t_sys_org (id,parent_id,name,code,address) VALUE (2,1,'交通一大队','011001','临安区抢滩路56号');
+INSERT t_sys_org (id,parent_id,name,code,address) VALUE (3,1,'交通二大队','011002','临安区繁华大道1号');
+INSERT t_sys_org (id,parent_id,name,code,address) VALUE (4,1,'交通三大队','011003','临安区东都大道21号');
+
+INSERT t_sys_user (name,org_id,role_id,tel,age) values ('刘军',2,1,'18823747865',32);
+INSERT t_sys_user (name,org_id,role_id,tel,age) values ('张小东',3,1,'18323744864',22);
+INSERT t_sys_user (name,org_id,role_id,tel,age) values ('石前',4,1,'18523447845',25);

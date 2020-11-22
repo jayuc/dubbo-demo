@@ -10,3 +10,10 @@ dubbo:
   protocol:
     name: dubbo
     port: 2223
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://121.89.170.193:3306/dubbo?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
