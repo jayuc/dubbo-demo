@@ -10,6 +10,7 @@ dubbo:
   protocol:
     name: dubbo
     port: 2223
+    host: 121.89.170.193
 spring:
   datasource:
     username: root
