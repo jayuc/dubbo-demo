@@ -35,6 +35,6 @@ mvn clean package -Dmaven.test.skip=true
 echo "setp 3/3: docker build"
 cp ./Dockerfile ./target/
 cd ./target/
-docker build -t "dubbo/userServer:${m_version}" .
+docker build -t "server/user:${m_version}" .
 
 echo "finshed."
