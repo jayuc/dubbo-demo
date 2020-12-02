@@ -2,7 +2,7 @@ server:
   port: 8055
 dubbo:
   application:
-    name: userServer
+    name: platform
   registry:
     address: 121.89.170.193:2222
     protocol: zookeeper
