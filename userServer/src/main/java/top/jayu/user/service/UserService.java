@@ -8,7 +8,7 @@ import top.jayu.api.IUserService;
 import top.jayu.api.model.User;
 import top.jayu.user.mapper.UserMapper;
 
-@Service
+@Service(group = "dev", version = "1.0")
 @Slf4j
 public class UserService implements IUserService {
 

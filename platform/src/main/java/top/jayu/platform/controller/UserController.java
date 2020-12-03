@@ -13,7 +13,7 @@ import top.jayu.api.model.User;
 @Slf4j
 public class UserController {
 
-    @Reference
+    @Reference(group = "dev", version = "1.0")
     IUserService userService;
 
     @RequestMapping("/get")
